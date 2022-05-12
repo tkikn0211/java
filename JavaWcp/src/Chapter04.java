@@ -1,12 +1,11 @@
-
-public class Chapter04 {
-
-	public static void main(String[] args) {
-		final int LUCKY_NUMBER = 7;
-		String str = "ken takei";
-		System.out.println(str);
-		str = "金は命より重い";
-		System.out.println(str);
-		System.out.println(LUCKY_NUMBER);
+public class Chapter04{
+	public static void main(String [] args) {
+		String str1 = "武井謙";
+		String str2 = "金は命より重い";
+		int num1 = 7;
+		
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(num1);
 	}
 }
