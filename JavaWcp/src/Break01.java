@@ -5,7 +5,7 @@ public class Break01 {
 			if (count == 2) {
 				break;
 			}
-			System.out.println("Break01 = " + count);
+			System.out.println("Break01 =" + count);
 		}
 	}
 }

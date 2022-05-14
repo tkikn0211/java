@@ -1,6 +1,6 @@
 
 public class Chapter07 {
-	public static void main(String [] args) {
+	public static void main(String[] args) {
 		int val = 7;
 		if (val >= 5) {
 			System.out.println("とても近いです");
