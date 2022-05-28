@@ -10,11 +10,12 @@ public class Human04 {
 		this.name = name;
 		Human04.humanCount++;
 	}
-	static public void staticmethodPrint() {
+	
+	static public void staticMethodPrint() {
 		System.out.println("人の数は" + Human04.humanCount);
 	}
 	
 	public void instanceMethodPrint() {
-		System.out.println("名前は" + name);
+		System.out.println("名前は、" + name);
 	}
 }
