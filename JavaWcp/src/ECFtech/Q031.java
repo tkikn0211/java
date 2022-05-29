@@ -8,8 +8,7 @@ public class Q031 {
 		for (int i = 0; i < a.length; i++) {
 			sum = sum + a[i];
 		}
-
-		int number = sum / a.length;
-		System.out.println(number);
+		int x = sum / a.length;
+		System.out.print(x);
 	}
 }

@@ -3,7 +3,6 @@ package ECFtech;
 public class Q033 {
 	public static void main(String[] args) {
 		String[] a = { "abc", "abcd", "abcde", "xx", "yyy" };
-
 		String key = "abcde";
 
 		int i;
@@ -12,11 +11,10 @@ public class Q033 {
 				break;
 			}
 		}
-
 		if (i < a.length) {
 			System.out.println(i);
 		} else {
-			System.out.println("Not found");
+			System.out.println("Notfount");
 		}
 	}
 }

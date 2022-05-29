@@ -9,10 +9,10 @@ public class Q032 {
 		int sum = 0;
 
 		for (int i = 0; i < a.length; i++) {
-			if (min <= a[i] && a[i] <= max) {
+			if (a[i] >= min && a[i] <= max) {
 				sum = sum + a[i];
 			}
 		}
-		System.out.println(sum);
+		System.out.print(sum);
 	}
 }
