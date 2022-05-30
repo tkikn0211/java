@@ -8,24 +8,24 @@ public class Q036 {
 		for (int i = 0; i < a.length; i++) {
 			System.out.println(a[i]);
 		}
+
 		for (int i = 0; i < a.length; i++) {
-			int minIndex = i;
-			
-			for(int j = i +1; j < a.length; j++) {
-				if(a[minIndex] > a[j]) {
-					minIndex = j;
+			int minValue = i;
+
+			for (int j = i + 1; j < a.length; j++) {
+				if (a[minValue] > a[j]) {
+					minValue = j;
 				}
 			}
-			
-			int work = a[i];
-			a[i] = a[minIndex];
-			a[minIndex] = work;
+
+			int work;
+			work = a[minValue];
+			a[minValue] = a[i];
+			a[i] = work;
 		}
-		
-		System.out.println("並び替え後");
-		for(int i = 0; i < a.length; i++) {
+		System.out.println("入れ替え後");
+		for (int i = 0; i < a.length; i++) {
 			System.out.println(a[i]);
 		}
-
 	}
 }
