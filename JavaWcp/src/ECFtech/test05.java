@@ -8,13 +8,7 @@ public class test05 {
 			number[i] = number[i - 1] + 5;
 			System.out.print(number[i]);
 		}
-		System.out.println();
 		
-		for(int i = 1; i < number.length; i++) {
-			number[i] = number[i - 1] + 5;
-			System.out.print(number[i]);
-			
-		}
 		
 	}
 }
