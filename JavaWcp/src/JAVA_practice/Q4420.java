@@ -5,7 +5,7 @@ public class Q4420 {
 		int num = new java.util.Scanner(System.in).nextInt();
 		
 		for(int i = 0; i < num; i++) {
-			for(int j = 0; j < i + 1; j++) {
+			for(int j = 0; j <= i; j++) {
 				System.out.print("$");
 			}
 			System.out.println();
