@@ -13,7 +13,7 @@ public class Qsannkakkei {
 			}
 			
 			System.out.println();
-		}
+		} 
 	}
 }
 
