@@ -3,28 +3,27 @@ package 練習問題8._6;
 import java.util.Random;
 
 public class Cleric {
-	String name;
+	String name ;
 	int hp = 50;
-	final int MAX_HP = 50;
+	final int MAXHP = 50;
 	int mp = 10;
-	final int MAX_MP = 10;
+	final int MAXMP = 10;
 	
 	public void selfAid() {
 		System.out.println(this.name + "は、セルフエイドを唱えた！");
-		this.hp = this.MAX_HP;
 		this.mp -= 5;
-		System.out.println("HPが最大まで回復した。MPは５減った。");
+		this.hp = this.MAXHP;
+		System.out.println("HPが最大まで回復した！");
 	}
 	
-	public void pray(int sec) {
-		System.out.println(this.name + "は、" + sec +"秒間祈った！");
+	public int pray(int sec) {
+		System.out.println(this.name + "は" + sec + "秒間祈りました！");
 		
 		int recover = new Random().nextInt(3) + sec;
+		int recoverActual = Math.min(this.MAXHP - this.hp, recover);
 		
-		int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
-		
-		this.mp += recoverActual;
-		System.out.println("MPが" + recoverActual + "回復した");
+		this.hp += recoverActual;
+		System.out.println("MPが" + recoverActual + "回復した！");
+		return recoverActual;
 	}
-	
 }
